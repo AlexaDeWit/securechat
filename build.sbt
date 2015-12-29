@@ -10,6 +10,7 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
+  "org.webjars" % "bootstrap" % "3.3.4",
   specs2 % Test
 )
 
