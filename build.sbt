@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
-  "org.webjars" % "bootstrap" % "3.3.4" exclude("org.webjars", "jquery"),
+  "org.webjars" % "bootstrap" % "3.3.4",
   "org.webjars" % "requirejs" % "2.1.14-1",
   specs2 % Test
 )

@@ -1,3 +1,9 @@
+requirejs.config({
+  baseUrl: "/assets/javascripts",
+  paths: {
+    jquery: "/assets/lib/jquery/jquery.min"
+  }
+});
 requirejs(["chat"], function(util) {
     //This function is called when scripts/helper/util.js is loaded.
     //If util.js calls define(), then this function is not fired until
