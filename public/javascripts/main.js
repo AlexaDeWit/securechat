@@ -2,6 +2,11 @@ requirejs.config({
   baseUrl: "/assets/javascripts",
   paths: {
     jquery: "/assets/lib/jquery/jquery.min"
+  },
+
+  map : {
+    "*" : { "jquery" : "jquery-private" },
+    "jquery-private" : { "jquery" : "jquery" }
   }
 });
 requirejs(["chat"], function(util) {
