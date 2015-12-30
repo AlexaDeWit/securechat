@@ -2,6 +2,77 @@
 
 @main("Welcome to Play") {
 
-  <p>Chat Interface</p>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>
+        Your public key: <a class="btn btn-sm btn-warning" title="Copy to clipboard" id="public-key">KEY</a>
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-sm-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            Speaking with: KEY
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="alert alert-warning">
+            You said: Foo
+          </div>
+          <div class="alert alert-warning">
+            You said: Bar
+          </div>
+          <div class="alert alert-info">
+            They said: Boogles!
+          </div>
+          <div class="alert alert-warning">
+            You said: I love boogles!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            Speaking with: KEY
+          </h3>
+        </div>
+        <div class="panel-body">
+          <div class="alert alert-info">
+            They said: Hey!
+          </div>
+          <div class="alert alert-info">
+            They said: Listen! 
+          </div>
+          <div class="alert alert-info">
+            They said: Hey!
+          </div>
+          <div class="alert alert-info">
+            They said: Listen!
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <h4>Start Conversation</h4>
+      <div class="form-group">
+        <label for="other-key">Their Public Key:</label>
+        <textarea class="form-control" rows="6" id="other-key"></textarea>
+      </div>
+      <a class="btn btn-lg btn-success" title"Open Conversation" id="start-new">Open Conversation</a>
+    </div>
+  </div>
+</div>
 
 }
